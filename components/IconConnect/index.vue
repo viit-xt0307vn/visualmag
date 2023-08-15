@@ -1,7 +1,7 @@
 <template>
-  <div class="followus-item">
+  <div class="icon-box">
     <div>
-      <font-awesome-icon :icon="icon" class="followus-icon" />
+      <font-awesome-icon :icon="icon" class="icon" />
     </div>
     <p class="followus-name">{{ followName }}</p>
   </div>
@@ -17,14 +17,19 @@ const { followName } = defineProps({
 </script>
 
 <style lang="css" scoped>
-.followus-item {
+.icon-box {
   display: flex;
   height: 33px;
   gap: 10px;
   align-items: center;
 }
 
-.followus-icon {
+.icon-box:hover {
+  transform: scale(1.1);
+  transition: all 0.1s linear;
+}
+
+.icon {
   color: var(--icon-clr);
   display: flex;
   align-items: center;

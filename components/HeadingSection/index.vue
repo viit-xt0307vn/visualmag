@@ -1,11 +1,13 @@
 <template>
     <h2 class="heading-section-box">
-        <a class="heading-section" href="#">Advertising</a>
+        <a class="heading-section" href="#">{{ nameHeading }}</a>
     </h2>
 </template>
 
 <script setup>
-
+defineProps({
+  nameHeading: "string"
+})
 </script>
 
 <style lang="scss" scoped>
@@ -26,6 +28,11 @@
   font-weight: bold;
   height: 100%;
   position: relative;
+  text-transform: capitalize;
+}
+
+.heading-section:hover {
+  color: #0099E5;
 }
 .heading-section::before {
   content: " ";

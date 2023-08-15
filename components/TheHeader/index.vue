@@ -1,8 +1,48 @@
 <template>
     <header class="header">
         <nav class="navigation">
-            <img class="logo" src="~/assets/images/logo-1-300x56.png"  alt="" />
+            <img class="logo" src="~/assets/images/logo-1-300x56.png" alt="" />
             <ul class="menu">
+                <li class="menu-item">
+                    <NuxtLink class="menu-link" to="/">Home</NuxtLink>
+                </li>
+                <li class="menu-item">
+                    <NuxtLink class="menu-link" to="/category/advertising">Advertising</NuxtLink>
+                </li>
+                <li class="menu-item">
+                    <NuxtLink class="menu-link" to="/category/blogging">Blogging</NuxtLink>
+                </li>
+                <li class="menu-item">
+                    <NuxtLink class="menu-link" to="/category/marketing">Marketing</NuxtLink>
+                </li>
+                <li class="menu-item">
+                    <NuxtLink class="menu-link" to="/category/social">Social </NuxtLink>
+                </li>
+                <li class="menu-item">
+                    <NuxtLink class="menu-link" to="/category/seo">SEO</NuxtLink>
+                </li>
+                <li class="menu-item">
+                    <NuxtLink class="menu-link" to="/category/webdesign">Web Design</NuxtLink>
+                </li>
+                <li class="menu-item">
+                    <NuxtLink class="menu-link" to="/category/technology">Tech</NuxtLink>
+                </li>
+            </ul>
+
+            <div class="search">
+                <input type="text" class="search-input" />
+                <button class="search-button">
+                    <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="icon-glass" />
+                </button>
+            </div>
+
+            <div class="menu-icon" @click="handleClickMenu">
+                <font-awesome-icon icon="fa-solid fa-bars" class="icon-bars" />
+            </div>
+        </nav>
+
+        <nav class="navigation-secondary">
+            <ul class="menu-secondary">
                 <li class="menu-item"><a href="" class="menu-link">Home</a></li>
                 <li class="menu-item">
                     <a href="" class="menu-link">Advertising</a>
@@ -23,15 +63,8 @@
                 <li class="menu-item"><a href="" class="menu-link">Tech</a></li>
             </ul>
 
-            <div class="search">
-                <input type="text" class="search-input" />
-                <button class="search-button">
-                    <font-awesome-icon icon="fa-solid fa-magnifying-glass" class="icon-glass"/>
-                </button>
-            </div>
-
-            <div class="menu-icon">
-                <i class="fa-solid fa-bars"></i>
+            <div class="menu-close" @click="handleClickCloseMenu">
+                <font-awesome-icon icon="fa-solid fa-xmark" class="icon-xmark" />
             </div>
         </nav>
     </header>
@@ -39,6 +72,14 @@
 
 <script setup>
 
+function handleClickMenu() {
+    document.querySelector(".navigation-secondary").style.display = "flex"
+
+}
+
+function handleClickCloseMenu() {
+    document.querySelector(".navigation-secondary").style.display = "none"
+}
 </script>
 
 <style lang="scss">
@@ -46,6 +87,41 @@
     height: 76px;
     width: 100%;
     box-shadow: 0 0 15px #00000030;
+}
+
+.navigation-secondary {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    right: 0;
+    background-color: #FFF;
+    display: none;
+    justify-content: space-between;
+    padding: 30px;
+
+    .menu-secondary {
+        display: flex;
+        flex-direction: column;
+        gap: 20px 0;
+    }
+
+
+    .menu-close {
+        display: flex;
+        width: 36px;
+        height: 36px;
+        align-items: center;
+        justify-content: center;
+
+        .icon-xmark {
+            display: block;
+            width: 20px;
+            height: 20px;
+            color: #000;
+        }
+    }
 }
 
 .navigation {
@@ -80,6 +156,7 @@
         justify-content: center;
         height: 100%;
         width: 36px;
+
         .icon-glass {
             font-size: 16px;
             color: #fff;
@@ -111,9 +188,11 @@
     .search {
         display: none;
     }
+
     header {
         padding: 0 15px;
     }
+
     .menu {
         margin-right: 0;
     }
@@ -122,12 +201,12 @@
 
 @media screen and (max-width: 960px) {
 
-    .header {
-    }
+    .header {}
+
     .navigation {
         display: flex;
         justify-content: space-between;
-        
+
     }
 
 
@@ -135,11 +214,10 @@
         display: none;
     }
 
-    
+
 
     .menu-icon {
         display: flex;
-        z-index: 999;
     }
 }
 </style>

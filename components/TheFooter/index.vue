@@ -51,35 +51,70 @@
             </div>
             <p class="footer-themeby">WordPress Theme by WPEnjoy</p>
             <div class="footer-connect">
-                <div class="icon-wrapper" style="--clr: #1da1f2"><font-awesome-icon icon="fa-brands fa-facebook" class="icon"
-                         /></div>
-                <div class="icon-wrapper" style="--clr: #1778f2"><font-awesome-icon icon="fa-brands fa-twitter" class="icon"
-                         /></div>
-                <div class="icon-wrapper" style="--clr: #f53f97"><font-awesome-icon icon="fa-brands fa-instagram" class="icon"
-                         /></div>
-                <div class="icon-wrapper" style="--clr: #fa0000"><font-awesome-icon icon="fa-brands fa-youtube" class="icon"
-                         /></div>
-                <div class="icon-wrapper" style="--clr: #e64b87"><font-awesome-icon icon="fa-brands fa-dribbble" class="icon"
-                         /></div>
-                <div class="icon-wrapper" style="--clr: #0d66c2"><font-awesome-icon icon="fa-brands fa-linkedin" class="icon"
-                         /></div>
+                <div class="icon-wrapper" style="--clr: #1da1f2"><font-awesome-icon icon="fa-brands fa-facebook"
+                        class="icon" /></div>
+                <div class="icon-wrapper" style="--clr: #1778f2"><font-awesome-icon icon="fa-brands fa-twitter"
+                        class="icon" /></div>
+                <div class="icon-wrapper" style="--clr: #f53f97"><font-awesome-icon icon="fa-brands fa-instagram"
+                        class="icon" /></div>
+                <div class="icon-wrapper" style="--clr: #fa0000"><font-awesome-icon icon="fa-brands fa-youtube"
+                        class="icon" /></div>
+                <div class="icon-wrapper" style="--clr: #e64b87"><font-awesome-icon icon="fa-brands fa-dribbble"
+                        class="icon" /></div>
+                <div class="icon-wrapper" style="--clr: #0d66c2"><font-awesome-icon icon="fa-brands fa-linkedin"
+                        class="icon" /></div>
 
             </div>
+        </div>
+        <div class="rollup-box" @click="handleClickRollUpp">
+            <font-awesome-icon icon="fa-solid fa-arrow-up" class="icon-rollup" />
         </div>
     </footer>
 </template>
 
 <script setup>
+// window.onscroll = function (e) {
+    // if (window.pageYOffset > 200) {
+    //     document.querySelector(".rollup-box").style.display = "flex"
+    // } else {
+    //     document.querySelector(".rollup-box").style.display = "none"
+    // }
+// }
+
+function handleClickRollUpp() {
+    window.pageYOffset = 0
+}
+
 
 
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
+.rollup-box {
+    width: 30px;
+    height: 30px;
+    background-color: #068DDA;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+}
+
+.icon-rollup {
+    widows: 10px;
+    height: 10px;
+    color: #FFF;
+}
+
 .footer {
     margin-top: 40px;
     width: 100%;
     background-color: #000;
     color: #fff;
+    position: relative;
 
     &-box-list {
         display: grid;
@@ -170,15 +205,25 @@
     margin: 0 auto;
 }
 
+@media screen and (max-width: 1180px) {
+    .footer {
+        padding: 0 40px;
 
-@media screen and (max-width: 600px) {
+    }
+
+}
+
+
+@media screen and (max-width: 780px) {
     .footer {
         padding: 0 15px;
 
         &-box-list {
             display: flex;
             flex-direction: column;
+            gap: 40px 0;
         }
     }
 
-}</style>
+}
+</style>

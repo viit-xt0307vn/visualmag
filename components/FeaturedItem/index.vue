@@ -1,25 +1,27 @@
 <template>
     <div class="featured-item">
-        <img class="featured-image" src="~/assets/images/laptop-electronic-768x512.jpeg" alt="" />
+        <img class="featured-image" :src="urlImage" alt="" />
         <div class="featured-content">
             <div class="card" >
                 <a href="" class="cart-name">{{ cardName }}</a>
             </div>
             <h2 class="featured-title">
-                The Ultimate Guide To Joining or Hosting A Twitter Chat
-                adf adsf dsf sdf asfads fasd fdasf adsf
+                {{ title }}
             </h2>
         </div>
     </div>
 </template>
 
 <script setup>
+
 const {cardName} = defineProps({
-    cardName: "string"
+    cardName: "string",
+    title: "string",
+    urlImage: "string"
 })
 </script>
 
-<style lang="css" scoped>
+<style lang="css">
 .featured-item {
     position: relative;
     width: 100%;
@@ -39,6 +41,7 @@ const {cardName} = defineProps({
     width: 100%;
     height: 100%;
     position: absolute;
+    object-fit: cover;
 }
 
 .featured-content {
@@ -55,15 +58,22 @@ const {cardName} = defineProps({
 
 .featured-content .card a {
     font-size: 11px;
-    line-height: 20px;
-    padding: 0 6px;
+    line-height: 10px;
     text-transform: uppercase;
-    font-family: var(--secondary-font);
     color: #FFF;
+    font-weight: 400;
 }
 
 .featured-title {
     margin-top: 10px;
     font-size: 17px;
     color: #FFF;
-}</style>
+}
+
+@media screen and (max-width: 478px) {
+    .featured-content .card:not(.featured-content .card:first-child) {
+        display: none;
+    }
+}
+
+</style>

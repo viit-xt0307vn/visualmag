@@ -1,0 +1,287 @@
+.main {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.container {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
+    &-main {
+        grid-column: 1/3;
+    }
+}
+
+.container-double {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    gap: 32px;
+    margin-top: 30px;
+}
+
+.post-seo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+// Featured
+.featured {
+    width: 100%;
+    height: 384px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-top: 20px;
+    position: relative;
+}
+
+// Advertising
+.advertising {
+    &-container {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+
+        .post-main {
+            width: 100%;
+            height: 200px;
+        }
+
+        .posts-secondary {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 24px 0;
+
+            .post-secondary {
+                display: flex;
+                gap: 15px;
+            }
+        }
+    }
+}
+
+// Blogging
+.blogging {
+    width: 100%;
+    margin-top: 30px;
+
+    &-container {
+        margin-top: 24px;
+        display: flex;
+        gap: 23px;
+    }
+
+    .heading-blogging {
+        font-weight: 700;
+    }
+}
+
+// Web design
+.webdesign {
+    width: 100%;
+
+    &-container {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+// Marketing
+.marketing {
+    width: 100%;
+
+    &-container {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+// Follow Us
+
+
+.questions {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.questions .question {
+    text-align: justify;
+}
+
+.reviews {
+    margin-top: 30px;
+}
+// News
+.news {
+    width: 100%;
+    margin-top: 30px;
+    &-container {
+        margin-top: 24px;
+        width: 100%;
+        display: grid;
+        gap: 20px;
+        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    }
+}
+
+// Fashion
+.fashion {
+    width: 100%;
+    margin-top: 31px;
+
+    &-container {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+// Seo
+.post-seo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.seo-item:first-child .card{
+    background-color: red;
+}
+
+// Social Media
+.socialmedia {
+    width: 100%;
+    &-container {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+}
+
+// Technology
+.technology {
+    margin-top: 30px;
+    width: 100%;
+
+    &-container {
+        margin-top: 24px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+.lifestyle,
+.wordpress {
+    width: 100%;
+
+    &-container {
+        width: 100%;
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+// Business
+.business {
+    width: 100%;
+    margin-top: 30px;
+
+    &-container {
+        width: 100%;
+        margin-top: 24px;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        gap: 24px;
+    }
+}
+
+.wordpress,
+.filter {
+    margin-top: 30px;
+}
+
+
+
+@media screen and (max-width: 1180px) {
+    main {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .featured {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 782px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        &-main {
+            display: flex;
+            flex-direction: column;
+        }
+        &-double {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    .advertising-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featured {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 192px);
+        height: auto;
+        font-size: 17px;
+
+        &-item:first-child {
+            grid-column: 1/3;
+            grid-row: 1/3;
+
+            .featured-title {
+                font-size: 23px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .socialmedia-container,
+    .business-container,
+    .news-container,
+    .post-seo {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 478px) {
+
+}
+
+

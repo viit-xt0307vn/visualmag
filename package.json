@@ -9,9 +9,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
     "@nuxt/devtools": "latest",
     "@types/node": "^18.17.3",
-    "nuxt": "^3.6.5"
+    "nuxt": "^3.6.5",
+    "nuxt-purgecss": "^2.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.2",

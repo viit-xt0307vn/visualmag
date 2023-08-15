@@ -1,55 +1,83 @@
 <template>
     <main class="main">
         <section class="featured">
-            <FeaturedItem style="--clr: #0099e5" cardName="Advertising"/>
-            <FeaturedItem style="--clr: #34BF49" cardName="Marketing"/>
-            <FeaturedItem style="--clr: #FF9900" cardName="Web design"/>
-            <FeaturedItem style="--clr: #1CC7D0" cardName="Marketing"/>
-            <FeaturedItem style="--clr: #FF4F81" cardName="Web design"/>
+            <FeaturedItem style="--clr: #0099e5" cardName="Advertising"
+                title="The Ultimate Guide To Joining or Hosting A Twitter Chat"
+                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/06/macbook-laptop.jpeg" />
+            <FeaturedItem style="--clr: #34BF49" cardName="Marketing"
+                title="The Ultimate Guide To Joining or Hosting A Twitter Chat"
+                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/top-workspace-400x266.jpeg" />
+            <FeaturedItem style="--clr: #FF9900" cardName="Web design"
+                title="The Ultimate Guide To Joining or Hosting A Twitter Chat"
+                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/business-working2-400x266.jpeg" />
+            <FeaturedItem style="--clr: #1CC7D0" cardName="Marketing"
+                title="The Ultimate Guide To Joining or Hosting A Twitter Chat"
+                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/laptop-typing-400x266.jpeg" />
+            <FeaturedItem style="--clr: #FF4F81" cardName="Web design"
+                title="The Ultimate Guide To Joining or Hosting A Twitter Chat"
+                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/business-working3-400x266.jpeg" />
         </section>
 
         <div class="container">
             <div class="container-main">
                 <section class="advertising">
-                    <HeadingSection />
+                    <HeadingSection nameHeading="Advertising" />
                     <div class="advertising-container">
-                        <PostLarge />
+                        <PostLarge
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
+                            author="John Doe" date="April 27, 2021"
+                            title="5 Steps for Using Paid Internet Advertising to Drive Conversions"
+                            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… " />
 
                         <div class="posts-secondary">
-                            <PostTiny />
-                            <PostTiny />
-                            <PostTiny />
-                            <PostTiny />
+                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
                         </div>
                     </div>
                 </section>
                 <section class="blogging">
-                    <HeadingSection />
+                    <HeadingSection nameHeading="Blogging" />
                     <div class="blogging-container">
-                        <PostSmall />
-                        <PostSmall />
-                        <PostSmall />
+                        <PostSmall
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
+                            title="SEO is Turning into a Questions and Answers Game" />
+                        <PostSmall
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
+                            title="SEO is Turning into a Questions and Answers Game" />
+                        <PostSmall
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
+                            title="SEO is Turning into a Questions and Answers Game" />
                     </div>
                 </section>
                 <div class="container-double">
                     <section class="webdesign">
-                        <HeadingSection />
+                        <HeadingSection nameHeading="Web design" />
 
                         <div class="webdesign-container">
-                            <PostLarge />
-                            <PostTiny />
-                            <PostTiny />
-                            <PostTiny />
+                            <PostLarge
+                                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
+                                author="John Doe" date="April 27, 2021"
+                                title="5 Steps for Using Paid Internet Advertising to Drive Conversions"
+                                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… " />
+                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
                         </div>
                     </section>
                     <section class="marketing">
-                        <HeadingSection />
+                        <HeadingSection nameHeading="Marketing" />
 
                         <div class="marketing-container">
-                            <PostLarge />
-                            <PostTiny />
-                            <PostTiny />
-                            <PostTiny />
+                            <PostLarge
+                                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
+                                author="John Doe" date="April 27, 2021"
+                                title="5 Steps for Using Paid Internet Advertising to Drive Conversions"
+                                desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… " />
+                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
                         </div>
                     </section>
                 </div>
@@ -57,21 +85,15 @@
 
             <div class="container-secondary">
                 <section class="followus">
-                    <HeadingSection />
-                    <div class="followus-container">
-                        <FollowUsIcon icon="fa-brands fa-twitter" followName="Twitter" style="--icon-clr: #1da1f2"/>
-                        <FollowUsIcon icon="fa-brands fa-facebook" followName="Facebook" style="--icon-clr: #1778f2"/>
-                        <FollowUsIcon icon="fa-brands fa-instagram" followName="Instagram" style="--icon-clr: #f33f97"/>
-                        <FollowUsIcon icon="fa-brands fa-youtube" followName="YouTube" style="--icon-clr: #fa0000"/>
-                        <FollowUsIcon icon="fa-brands fa-dribbble" followName="Dribbble" style="--icon-clr: #e64b87"/>
-                        <FollowUsIcon icon="fa-brands fa-linkedin" followName="LinkedIn" style="--icon-clr: #0d66c2"/>
-                    </div>
+                    <HeadingSection nameHeading="Follow us" />
+                    <IconsConnect />
                 </section>
 
                 <section class="reviews">
-                    <HeadingSection />
+                    <HeadingSection nameHeading="Reviews" />
                     <div class="reviews-container">
-                        <PostMedium />
+                        <PostMedium title="How to Use Amazon Posts to Promote Your Products"
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/desk-office-400x266.jpeg" />
                         <ul class="questions">
                             <li class="question">
                                 How to Use Instagram Story Highlights on a Brand
@@ -91,24 +113,33 @@
                 </section>
 
                 <section class="news">
-                    <HeadingSection />
+                    <HeadingSection nameHeading="News" />
 
                     <div class="news-container">
-                        <PostSmall />
-                        <PostSmall />
-                        <PostSmall />
-                        <PostSmall />
+                        <PostSmall
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
+                            title="SEO is Turning into a Questions and Answers Game" />
+                        <PostSmall
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
+                            title="SEO is Turning into a Questions and Answers Game" />
+                        <PostSmall
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
+                            title="SEO is Turning into a Questions and Answers Game" />
+                        <PostSmall
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
+                            title="SEO is Turning into a Questions and Answers Game" />
+
                     </div>
                 </section>
 
                 <section class="fashion">
-                    <HeadingSection />
+                    <HeadingSection nameHeading="Fashion" />
 
                     <div class="fashion-container">
-                        <PostTiny />
-                        <PostTiny />
-                        <PostTiny />
-                        <PostTiny />
+                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
                     </div>
                 </section>
 
@@ -116,69 +147,110 @@
         </div>
 
         <section class="post-seo">
-            <PostMedium />
-            <PostMedium />
-            <PostMedium />
+            <PostMedium card=true style="--clr:#0099E5" title="How to Use Amazon Posts to Promote Your Products"
+                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/desk-office-400x266.jpeg" />
+            <PostMedium card=true style="--clr:#34BF49" title="How to Use Amazon Posts to Promote Your Products"
+                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/desk-office-400x266.jpeg" />
+            <PostMedium card=true style="--clr:#F47721" title="How to Use Amazon Posts to Promote Your Products"
+                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/desk-office-400x266.jpeg" />
         </section>
 
         <div class="container">
             <div class="container-main">
                 <section class="socialmedia">
-                    <HeadingSection />
+                    <HeadingSection nameHeading="Social Media" />
                     <div class="socialmedia-container">
-                        <PostMedium />
-                        <PostMedium />
-                        <PostMedium />
-                        <PostMedium />
+                        <PostLarge
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
+                            author="John Doe" date="April 27, 2021"
+                            title="5 Steps for Using Paid Internet Advertising to Drive Conversions" />
+                        <PostLarge
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
+                            author="John Doe" date="April 27, 2021"
+                            title="5 Steps for Using Paid Internet Advertising to Drive Conversions" />
+                        <PostLarge
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
+                            author="John Doe" date="April 27, 2021"
+                            title="5 Steps for Using Paid Internet Advertising to Drive Conversions" />
+                        <PostLarge
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
+                            author="John Doe" date="April 27, 2021"
+                            title="5 Steps for Using Paid Internet Advertising to Drive Conversions" />
                     </div>
                 </section>
 
                 <section class="technology">
-                    <HeadingSection />
+                    <HeadingSection nameHeading="Technology" />
                     <div class="technology-container">
-                        <PostHorizontal />
-                        <PostHorizontal />
-                        <PostHorizontal />
-                        <PostHorizontal />
-                        <PostHorizontal />
+                        <PostHorizontal
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
+                            author="John Doe" date="June 21, 2020" title="SEO is Turning into a Questions and Answers Game"
+                            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… " />
+                        <PostHorizontal
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
+                            author="John Doe" date="June 21, 2020" title="SEO is Turning into a Questions and Answers Game"
+                            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… " />
+                        <PostHorizontal
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
+                            author="John Doe" date="June 21, 2020" title="SEO is Turning into a Questions and Answers Game"
+                            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… " />
+                        <PostHorizontal
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
+                            author="John Doe" date="June 21, 2020" title="SEO is Turning into a Questions and Answers Game"
+                            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… " />
+                        <PostHorizontal
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
+                            author="John Doe" date="June 21, 2020" title="SEO is Turning into a Questions and Answers Game"
+                            desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… " />
+
+
                     </div>
                 </section>
             </div>
             <div class="container-secondary">
                 <section class="lifestyle">
-                    <HeadingSection />
+                    <HeadingSection nameHeading="Life style" />
                     <div class="lifestyle-container">
-                        <PostTiny />
-                        <PostTiny />
-                        <PostTiny />
-                        <PostTiny />
+                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
                     </div>
                 </section>
 
                 <section class="business">
-                    <HeadingSection />
+                    <HeadingSection nameHeading="Business" />
                     <div class="business-container">
-                        <PostSmall />
-                        <PostSmall />
-                        <PostSmall />
-                        <PostSmall />
+                        <PostSmall
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
+                            title="SEO is Turning into a Questions and Answers Game" />
+                        <PostSmall
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
+                            title="SEO is Turning into a Questions and Answers Game" />
+                        <PostSmall
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
+                            title="SEO is Turning into a Questions and Answers Game" />
+                        <PostSmall
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
+                            title="SEO is Turning into a Questions and Answers Game" />
                     </div>
                 </section>
 
                 <section class="wordpress">
-                    <HeadingSection />
+                    <HeadingSection nameHeading="Wordpress" />
                     <div class="wordpress-container">
-                        <PostTiny />
-                        <PostTiny />
-                        <PostTiny />
-                        <PostTiny />
+                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
                     </div>
                 </section>
 
                 <section class="filter">
-                    <HeadingSection />
+                    <HeadingSection nameHeading="Filter" />
                     <div class="filter-container">
-                        <PostMedium />
+                        <PostMedium title="How to Use Amazon Posts to Promote Your Products"
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/desk-office-400x266.jpeg" />
                     </div>
                 </section>
             </div>
@@ -192,230 +264,4 @@
 
 </script>
 
-<style lang="scss" scoped>
-.main {
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
-
-
-.container {
-    margin-top: 32px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 32px;
-
-    &-main {
-        grid-column: 1/3;
-    }
-}
-
-.container-double {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-    gap: 32px;
-    margin-top: 30px;
-}
-
-.post-seo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
-
-// Featured
-.featured {
-    width: 100%;
-    height: 384px;
-    display: grid;
-    gap: 8px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin-top: 20px;
-    position: relative;
-}
-
-// Advertising
-.advertising {
-    &-container {
-        margin-top: 24px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
-
-        .post-main {
-            width: 100%;
-            height: 200px;
-        }
-
-        .posts-secondary {
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            gap: 24px 0;
-
-            .post-secondary {
-                display: flex;
-                gap: 15px;
-            }
-        }
-    }
-}
-
-// Blogging
-.blogging {
-    width: 100%;
-    margin-top: 30px;
-
-    &-container {
-        margin-top: 24px;
-        display: flex;
-        gap: 23px;
-    }
-
-    .heading-blogging {
-        font-weight: 700;
-    }
-}
-
-// Web design
-.webdesign {
-    width: 100%;
-
-    &-container {
-        margin-top: 24px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-}
-
-// Marketing 
-.marketing {
-    width: 100%;
-
-    &-container {
-        margin-top: 24px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-}
-
-// Follow Us
-.followus-container {
-  margin-top: 20px;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 9px;
-}
-
-.questions {
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.questions .question {
-  text-align: justify;
-}
-
-// News
-.news {
-    width: 100%;
-    margin-top: 30px;
-
-    &-container {
-        margin-top: 24px;
-        width: 100%;
-        display: grid;
-        gap: 20px;
-        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    }
-}
-
-
-// Fashion
-// Fashion
-.fashion {
-    width: 100%;
-    margin-top: 31px;
-
-    &-container {
-        margin-top: 24px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-}
-
-// Seo
-.post-seo {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    margin-top:30px ;
-}
-
-// Social Media
-.socialmedia {
-    width: 100%;
-    &-container {
-        margin-top: 24px;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-    }
-}
-
-// Technology
-.technology {
-    margin-top: 30px;
-    width: 100%;
-
-    &-container {
-        margin-top: 24px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-    }
-}
-
-.lifestyle,
-.wordpress {
-    width: 100%;
-
-    &-container {
-        width: 100%;
-        margin-top: 24px;
-        display: flex;
-        flex-direction: column;
-        gap: 24px;
-    }
-}
-
-
-// Business
-.business {
-    width: 100%;
-    margin-top: 30px;
-
-    &-container {
-        width: 100%;
-        margin-top: 24px;
-        display: grid;
-        grid-template: 1fr 1fr / 1fr 1fr;
-        gap: 24px;
-    }
-}
-
-.wordpress,
-.filter {
-    margin-top: 30px;
-}
-</style>
+<style lang="scss" scoped src="./index.scss"></style>
