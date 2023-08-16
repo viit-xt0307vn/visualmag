@@ -44,4 +44,11 @@
         grid-column: 1/3;
     }
 }
+
+@media screen and (max-width: 782px) {
+    .container {
+        display: flex;
+        gap: 60px;
+    }
+}
 </style>
