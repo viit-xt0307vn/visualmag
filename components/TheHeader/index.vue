@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <nav class="navigation">
-            <nuxt-link to="/"><img class="logo" src="~/assets/images/logo-1-300x56.png" alt="" /></nuxt-link>
+            <nuxt-link to="/"><img class="logo" src="~/assets/images/logo-1-300x56.png" alt="" style="filter: brightness(1);" /></nuxt-link>
             <ul class="menu">
                 <li class="menu-item">
                     <NuxtLink class="menu-link" to="/">Home</NuxtLink>
