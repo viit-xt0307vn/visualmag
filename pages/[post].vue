@@ -1,6 +1,6 @@
 
 <template>
-    <NuxtLayout name="category">
+    <NuxtLayout name="post">
         <NuxtPage>
 
         </NuxtPage>

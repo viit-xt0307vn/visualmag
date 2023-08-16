@@ -1,25 +1,13 @@
 <template>
     <main class="main">
-        <section class="featured">
-            <FeaturedItem style="--clr: #0099e5" cardName="Advertising"
-                title="The Ultimate Guide To Joining or Hosting A Twitter Chat"
-                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/06/macbook-laptop.jpeg" />
-            <FeaturedItem style="--clr: #34BF49" cardName="Marketing"
-                title="The Ultimate Guide To Joining or Hosting A Twitter Chat"
-                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/top-workspace-400x266.jpeg" />
-            <FeaturedItem style="--clr: #FF9900" cardName="Web design"
-                title="The Ultimate Guide To Joining or Hosting A Twitter Chat"
-                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/business-working2-400x266.jpeg" />
-            <FeaturedItem style="--clr: #1CC7D0" cardName="Marketing"
-                title="The Ultimate Guide To Joining or Hosting A Twitter Chat"
-                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/laptop-typing-400x266.jpeg" />
-            <FeaturedItem style="--clr: #FF4F81" cardName="Web design"
-                title="The Ultimate Guide To Joining or Hosting A Twitter Chat"
-                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/business-working3-400x266.jpeg" />
-        </section>
+
+        <!-- Featured -->
+        <Featured />
 
         <div class="container">
-            <div class="container-main">
+            <main class="container-main">
+
+                <!-- Advertising -->
                 <section class="advertising">
                     <HeadingSection nameHeading="Advertising" />
                     <div class="advertising-container">
@@ -30,13 +18,23 @@
                             desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… " />
 
                         <div class="posts-secondary">
-                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                            <PostTiny
+                                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                                title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                            <PostTiny
+                                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                                title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                            <PostTiny
+                                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                                title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                            <PostTiny
+                                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                                title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
                         </div>
                     </div>
                 </section>
+
+                <!-- Blogging -->
                 <section class="blogging">
                     <HeadingSection nameHeading="Blogging" />
                     <div class="blogging-container">
@@ -52,6 +50,8 @@
                     </div>
                 </section>
                 <div class="container-double">
+
+                    <!-- Web desgin -->
                     <section class="webdesign">
                         <HeadingSection nameHeading="Web design" />
 
@@ -61,11 +61,19 @@
                                 author="John Doe" date="April 27, 2021"
                                 title="5 Steps for Using Paid Internet Advertising to Drive Conversions"
                                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… " />
-                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                            <PostTiny
+                                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                                title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                            <PostTiny
+                                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                                title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                            <PostTiny
+                                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                                title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
                         </div>
                     </section>
+
+                    <!-- Marketing -->
                     <section class="marketing">
                         <HeadingSection nameHeading="Marketing" />
 
@@ -75,20 +83,30 @@
                                 author="John Doe" date="April 27, 2021"
                                 title="5 Steps for Using Paid Internet Advertising to Drive Conversions"
                                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… " />
-                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                            <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                            <PostTiny
+                                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                                title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                            <PostTiny
+                                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                                title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                            <PostTiny
+                                urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                                title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
                         </div>
                     </section>
                 </div>
-            </div>
+            </main>
 
-            <div class="container-secondary">
+            <!-- Sidebar -->
+            <aside class="container-secondary">
+
+                <!-- Follow us -->
                 <section class="followus">
                     <HeadingSection nameHeading="Follow us" />
                     <IconsConnect />
                 </section>
 
+                <!-- Reviews -->
                 <section class="reviews">
                     <HeadingSection nameHeading="Reviews" />
                     <div class="reviews-container">
@@ -112,6 +130,7 @@
                     </div>
                 </section>
 
+                <!-- News -->
                 <section class="news">
                     <HeadingSection nameHeading="News" />
 
@@ -132,20 +151,30 @@
                     </div>
                 </section>
 
+                <!-- Fashion -->
                 <section class="fashion">
                     <HeadingSection nameHeading="Fashion" />
 
                     <div class="fashion-container">
-                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                        <PostTiny
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                            title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                        <PostTiny
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                            title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                        <PostTiny
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                            title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                        <PostTiny
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                            title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
                     </div>
                 </section>
 
-            </div>
+            </aside>
         </div>
 
+        <!-- SEO -->
         <section class="post-seo">
             <PostMedium card=true style="--clr:#0099E5" title="How to Use Amazon Posts to Promote Your Products"
                 urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/desk-office-400x266.jpeg" />
@@ -156,7 +185,9 @@
         </section>
 
         <div class="container">
-            <div class="container-main">
+            <main class="container-main">
+
+                <!-- Social Media -->
                 <section class="socialmedia">
                     <HeadingSection nameHeading="Social Media" />
                     <div class="socialmedia-container">
@@ -179,6 +210,7 @@
                     </div>
                 </section>
 
+                <!-- Technology -->
                 <section class="technology">
                     <HeadingSection nameHeading="Technology" />
                     <div class="technology-container">
@@ -206,18 +238,31 @@
 
                     </div>
                 </section>
-            </div>
-            <div class="container-secondary">
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="container-secondary">
+
+                <!-- Life style -->
                 <section class="lifestyle">
                     <HeadingSection nameHeading="Life style" />
                     <div class="lifestyle-container">
-                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
+                        <PostTiny
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                            title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                        <PostTiny
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                            title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                        <PostTiny
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                            title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                        <PostTiny
+                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                            title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
                     </div>
                 </section>
 
+                <!-- Business -->
                 <section class="business">
                     <HeadingSection nameHeading="Business" />
                     <div class="business-container">
@@ -232,36 +277,48 @@
                             title="SEO is Turning into a Questions and Answers Game" />
                         <PostSmall
                             urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/hands-table-400x266.jpeg"
-                            title="SEO is Turning into a Questions and Answers Game" />
-                    </div>
-                </section>
+                        title="SEO is Turning into a Questions and Answers Game" />
+                </div>
+            </section>
 
-                <section class="wordpress">
-                    <HeadingSection nameHeading="Wordpress" />
-                    <div class="wordpress-container">
-                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                        <PostTiny urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg" title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021"/>
-                    </div>
-                </section>
+            <!-- Wordpress -->
+            <section class="wordpress">
+                <HeadingSection nameHeading="Wordpress" />
+                <div class="wordpress-container">
+                    <PostTiny
+                        urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                        title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                    <PostTiny
+                        urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                        title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                    <PostTiny
+                        urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                        title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                    <PostTiny
+                        urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
+                        title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
+                </div>
+            </section>
 
-                <section class="filter">
-                    <HeadingSection nameHeading="Filter" />
-                    <div class="filter-container">
-                        <PostMedium title="How to Use Amazon Posts to Promote Your Products"
-                            urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/desk-office-400x266.jpeg" />
-                    </div>
-                </section>
-            </div>
-        </div>
+
+            <!-- Filter -->
+            <section class="filter">
+                <HeadingSection nameHeading="Filter" />
+                <div class="filter-container">
+                    <PostMedium title="How to Use Amazon Posts to Promote Your Products"
+                        urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/desk-office-400x266.jpeg" />
+                </div>
+            </section>
+        </aside>
+    </div>
 
 
-    </main>
-</template>
+</main></template>
 
 <script setup>
-
+definePageMeta({
+    layout: "home"
+})
 </script>
 
 <style lang="scss" scoped src="./index.scss"></style>

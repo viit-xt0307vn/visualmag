@@ -50,7 +50,6 @@ defineProps({
     &-metadata {
         display: flex;
         gap: 15px;
-        margin-top: 16px;
     }
 
     &-desc {

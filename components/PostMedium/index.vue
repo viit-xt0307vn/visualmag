@@ -17,7 +17,6 @@ const props = defineProps({
   title: "string",
 })
 
-console.log(props.card)
 </script>
 
 <style lang="scss">

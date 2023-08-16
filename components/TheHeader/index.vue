@@ -1,7 +1,7 @@
 <template>
     <header class="header">
         <nav class="navigation">
-            <img class="logo" src="~/assets/images/logo-1-300x56.png" alt="" />
+            <nuxt-link to="/"><img class="logo" src="~/assets/images/logo-1-300x56.png" alt="" /></nuxt-link>
             <ul class="menu">
                 <li class="menu-item">
                     <NuxtLink class="menu-link" to="/">Home</NuxtLink>
@@ -80,6 +80,7 @@ function handleClickMenu() {
 function handleClickCloseMenu() {
     document.querySelector(".navigation-secondary").style.display = "none"
 }
+
 </script>
 
 <style lang="scss">

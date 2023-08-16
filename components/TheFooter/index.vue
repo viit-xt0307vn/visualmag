@@ -66,27 +66,23 @@
 
             </div>
         </div>
-        <div class="rollup-box" @click="handleClickRollUpp">
+        <div class="rollup-box" @click="handleClickRollUpp" :style="styles">
             <font-awesome-icon icon="fa-solid fa-arrow-up" class="icon-rollup" />
         </div>
     </footer>
 </template>
 
 <script setup>
-// window.onscroll = function (e) {
-    // if (window.pageYOffset > 200) {
-    //     document.querySelector(".rollup-box").style.display = "flex"
-    // } else {
-    //     document.querySelector(".rollup-box").style.display = "none"
-    // }
-// }
+if (process.client) {
 
-function handleClickRollUpp() {
-    window.pageYOffset = 0
+    window.onscroll = function () {
+        this.scrollY > 74 ? styles.value.display = "flex" : styles.value.display = "none"
+    }
 }
 
-
-
+const styles = ref({
+    display: "none"
+})
 </script>
 
 <style lang="scss">

@@ -1,22 +1,17 @@
 <template>
-    <!-- Header -->
-    <TheHeader />
-
-    <!-- Main -->
     <slot />
-
-
-    <!-- Footer -->
-    <TheFooter />
 </template>
 
 <script setup>
-</script>
 
+</script>
+    
 <style lang="scss" scoped>
+
+
+
 .container {
-    width: 1180px;
-    margin: 0 auto;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -27,9 +22,11 @@
     }
 }
 
-@media screen and (max-width: 1180px) {
-    .main {
-        padding: 0 15px;
+
+@media screen and (max-width: 782px) {
+    .container {
+        display: flex;
+        flex-direction: column;
     }
 }
 </style>

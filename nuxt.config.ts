@@ -1,3 +1,5 @@
+import { client } from "process";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   css: [
@@ -5,7 +7,7 @@ export default defineNuxtConfig({
     '~/assets/sass/_global.scss'
   ],
   plugins: [
-    '~/plugins/fontawesome.js',
+    {src: '~/plugins/fontawesome.js', mode: "client"},
   ], 
   modules: [
     ['nuxt-purgecss', {  whitelistPatterns: [/svg.*/, /fa.*/] }],
