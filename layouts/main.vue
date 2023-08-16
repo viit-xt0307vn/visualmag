@@ -33,7 +33,7 @@
 }
 
 .container {
-    width: 1180px;
+    max-width: 1180px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
