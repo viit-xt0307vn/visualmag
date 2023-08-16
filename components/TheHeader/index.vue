@@ -179,12 +179,17 @@ function handleClickCloseMenu() {
 .menu-icon {
     width: 36px;
     height: 36px;
-    font-size: 16px;
     display: none;
     align-items: center;
     justify-content: center;
-    color: #000;
-    border: 1px solid #000;
+    border: 1px solid #e9e9e9;
+}
+
+.icon-bars {
+    font-size: 16px;
+    width: 18px;
+    height: 18px;
+    color: #222222;
 }
 
 
