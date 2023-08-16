@@ -136,6 +136,7 @@ function handleClickCloseMenu() {
 .logo {
     width: 220px;
     height: 41xp;
+    filter: brightness(100%, 100%);
 }
 
 .menu {

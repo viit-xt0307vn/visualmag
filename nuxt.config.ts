@@ -7,7 +7,7 @@ export default defineNuxtConfig({
     '~/assets/sass/_global.scss'
   ],
   plugins: [
-    {src: '~/plugins/fontawesome.js', mode: "client"},
+    '~/plugins/fontawesome.js',
   ], 
   modules: [
     ['nuxt-purgecss', {  whitelistPatterns: [/svg.*/, /fa.*/] }],
