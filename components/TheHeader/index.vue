@@ -161,6 +161,8 @@ function handleClickCloseMenu() {
 
         .icon-glass {
             font-size: 16px;
+            width: 16px;
+            height: 16px;
             color: #fff;
             transform: scaleX(-1);
         }
