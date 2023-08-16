@@ -45,6 +45,12 @@
     }
 }
 
+@media screen and (max-width: 1180px) {
+    .container {
+        padding: 0 15px;
+    }
+}
+
 @media screen and (max-width: 782px) {
     .container {
         display: flex;
