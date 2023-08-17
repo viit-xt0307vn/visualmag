@@ -1,16 +1,19 @@
 <template>
   <div class="post-large">
-    <img :src="urlImage" alt="" class="post-large-image" />
+    <nuxt-link :to="title"><img :src="urlImage" alt="" class="post-large-image" /></nuxt-link>
     <div class="post-large-metadata">
       <h6 class="post-large-author">{{ author }}</h6>
       <p class="post-large-date">{{ date }}</p>
     </div>
-    <h2 class="post-large-title">
-      {{ title }}
-    </h2>
+    <nuxt-link :to="title">
+      <h2 class="post-large-title">
+        {{ title }}
+      </h2>
+    </nuxt-link>
     <p class="post-large-desc">
       {{ desc }}
     </p>
+
   </div>
 </template>
 

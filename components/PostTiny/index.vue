@@ -1,12 +1,16 @@
 <template>
   <div class="post-tiny">
-    <img class="post-tiny-image" :src="urlImage" alt="" />
+    <nuxt-link :to="title" class="post-tiny">
+      <img class="post-tiny-image" :src="urlImage" alt="" /></nuxt-link>
     <div class="post-tiny-content">
-      <h2 class="post-tiny-title">
-        {{ title }}
-      </h2>
+      <nuxt-link :to="title">
+        <h2 class="post-tiny-title">
+          {{ title }}
+        </h2>
+      </nuxt-link>
       <p class="post-tiny-date">{{ date }}</p>
     </div>
+
   </div>
 </template>
 

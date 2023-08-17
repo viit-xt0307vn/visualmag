@@ -1,4 +1,6 @@
 <template>
+    <h2 class="section-heading">Marketing</h2>
+    <p class="caption">This is caption</p>
     <ul class="post-list">
         <li class="post">
             <PostHorizontal
@@ -37,23 +39,18 @@
 </template>
 
 <script setup>
+const title = ref('Marketing – VisualMag Pro')
+const description = ref('Category description here')
+
+useHead({
+  title,
+  meta: [{
+    name: 'description',
+    content: description
+  }]
+})
 </script>
 
-<style lang="scss" scoped>
-.post-list {
-    display: flex;
-    flex-direction: column;
-    padding: 20px 0;
-    margin: 0;
+<style lang="scss" scoped src="./style.scss">
 
-}
-
-.post {
-    border-bottom: 1px solid #e9e9e9;
-    padding: 40px 0;
-
-    &:first-child {
-        border-top: 1px solid #e9e9e9;
-    }
-}
 </style>

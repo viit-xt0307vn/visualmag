@@ -1,9 +1,12 @@
 <template>
-    <p class="tag">ads</p>
+    <nuxt-link :to="param"><p class="tag">{{ tagName }}</p></nuxt-link>
 </template>
 
 <script setup>
-
+defineProps({
+    tagName: "string",
+    param: "string"
+})
 </script>
 
 <style lang="scss" scoped>
@@ -13,5 +16,6 @@
     color: #555555;
     display: inline-block;
     font-size: 13px;
+    cursor: pointer;
 }
 </style>

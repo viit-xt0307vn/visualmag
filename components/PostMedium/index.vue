@@ -1,11 +1,13 @@
 <template>
   <div class="post-medium">
-    <img class="post-medium-image" :src="urlImage" alt="" />
-    <h2 class="post-medium-title">
-      {{ title }}
-      Faster
-    </h2>
+    <nuxt-link :to="title"><img class="post-medium-image" :src="urlImage" alt="" /></nuxt-link>
+    <nuxt-link :to="title">
+      <h2 class="post-medium-title">
+        {{ title }}
+      </h2>
+    </nuxt-link>
     <p v-if="card" class="card">SEO</p>
+
   </div>
 </template>
 
@@ -28,6 +30,7 @@ const props = defineProps({
   &-image {
     width: 100%;
     height: auto;
+    filter: brightness(0.8);
   }
 
   &-title {

@@ -1,12 +1,16 @@
 <template>
     <div class="category">
-        <p class="category-name">Advertising</p>
-        <p class="category-number">12</p>
+        <nuxt-link :to="param"><p class="category-name">{{ category }}</p></nuxt-link>
+        <p class="category-number">{{ quantity }}</p>
     </div>
 </template>
 
 <script setup>
-
+defineProps({
+    category: "string",
+    quantity: "number",
+    param: "string"
+})
 </script>
 
 <style lang="scss" scoped>
@@ -17,6 +21,10 @@
     justify-content: space-between;
     align-items: flex-start;
     border-bottom: 1px solid #e9e9e9;
+
+    &-name {
+        cursor: pointer;
+    }
 
 
     &-number {

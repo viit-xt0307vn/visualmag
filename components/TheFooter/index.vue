@@ -73,16 +73,18 @@
 </template>
 
 <script setup>
-if (process.client) {
-
-    window.onscroll = function () {
-        this.scrollY > 74 ? styles.value.display = "flex" : styles.value.display = "none"
-    }
-}
-
 const styles = ref({
     display: "none"
 })
+if (process.client) {
+    window.onscroll = function () {
+        this.scrollY > 74 ? styles.value.display = "flex" : styles.value.display = "none"
+        // console.log(styles.value.display)
+    }
+}
+
+
+
 </script>
 
 <style lang="scss">

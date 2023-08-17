@@ -1,9 +1,12 @@
 <template>
   <div class="post-small">
-    <img class="post-small-image" :src="urlImage" alt="" />
-    <p class="post-small-caption heading-blogging">
-      {{ title }}
-    </p>
+    <nuxt-link :to="title"><img class="post-small-image" :src="urlImage" alt="" /></nuxt-link>
+    <nuxt-link :to="title">
+      <p class="post-small-caption heading-blogging">
+        {{ title }}
+      </p>
+    </nuxt-link>
+
   </div>
 </template>
 

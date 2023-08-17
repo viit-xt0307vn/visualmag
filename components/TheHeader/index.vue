@@ -43,24 +43,30 @@
 
         <nav class="navigation-secondary">
             <ul class="menu-secondary">
-                <li class="menu-item"><a href="" class="menu-link">Home</a></li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Advertising</a>
+                    <NuxtLink class="menu-link" to="/">Home</NuxtLink>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Blogging</a>
+                    <NuxtLink class="menu-link" to="/category/advertising">Advertising</NuxtLink>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Marketing </a>
+                    <NuxtLink class="menu-link" to="/category/blogging">Blogging</NuxtLink>
                 </li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Social </a>
+                    <NuxtLink class="menu-link" to="/category/marketing">Marketing</NuxtLink>
                 </li>
-                <li class="menu-item"><a href="" class="menu-link">SEO</a></li>
                 <li class="menu-item">
-                    <a href="" class="menu-link">Web Design</a>
+                    <NuxtLink class="menu-link" to="/category/social">Social </NuxtLink>
                 </li>
-                <li class="menu-item"><a href="" class="menu-link">Tech</a></li>
+                <li class="menu-item">
+                    <NuxtLink class="menu-link" to="/category/seo">SEO</NuxtLink>
+                </li>
+                <li class="menu-item">
+                    <NuxtLink class="menu-link" to="/category/webdesign">Web Design</NuxtLink>
+                </li>
+                <li class="menu-item">
+                    <NuxtLink class="menu-link" to="/category/technology">Tech</NuxtLink>
+                </li>
             </ul>
 
             <div class="menu-close" @click="handleClickCloseMenu">

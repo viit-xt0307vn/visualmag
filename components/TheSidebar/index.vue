@@ -10,19 +10,19 @@
         <HeadingSection nameHeading="Recents post" />
 
         <div class="recents-container">
-            <PostTiny
+            <PostRecent
                 urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
                 title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
-            <PostTiny
+            <PostRecent
                 urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
                 title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
-            <PostTiny
+            <PostRecent
                 urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
                 title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
-            <PostTiny
+            <PostRecent
                 urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
                 title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
-            <PostTiny
+            <PostRecent
                 urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
                 title="The Complete Guide to Using Twitter to Grow Your Business" date="April 1, 2021" />
         </div>
@@ -31,39 +31,39 @@
     <section class="categories">
         <HeadingSection nameHeading="Categories" />
         <div class="categories-container">
-            <Category />
-            <Category />
-            <Category />
-            <Category />
-            <Category />
-            <Category />
-            <Category />
+            <Category category="Advertising" quantity=12 param="/advertising" />
+            <Category category="Blogging" quantity=12 param="/blogging" />
+            <Category category="Marketing" quantity=12 param="/marketing" />
+            <Category category="Social" quantity=12 param="/social" />
+            <Category category="SEO" quantity=12 param="/seo" />
+            <Category category="Web Design" quantity=12 param="/webdesign" />
+            <Category category="Tech" quantity=12 param="/technology" />
         </div>
     </section>
 
     <section class="tags">
         <HeadingSection nameHeading="Tags" />
         <div class="tags-container">
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
-            <Tag />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
+            <Tag tagName="ads" param="/tag/awesome" />
         </div>
     </section>
 </template>

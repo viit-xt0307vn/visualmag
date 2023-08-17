@@ -1,6 +1,7 @@
 <template>
     <main class="main">
 
+
         <!-- Featured -->
         <Featured />
 
@@ -59,7 +60,7 @@
                             <PostLarge
                                 urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/05/finance-flat-400x266.jpeg"
                                 author="John Doe" date="April 27, 2021"
-                                title="5 Steps for Using Paid Internet Advertising to Drive Conversions"
+                                title="555 Steps for Using Paid Internet Advertising to Drive Conversions"
                                 desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer porta felis non nibh interdum, tempus tempor urna tincidunt. Sed eget… " />
                             <PostTiny
                                 urlImage="https://demo.wpenjoy.com/visualmag-pro/wp-content/uploads/sites/55/2021/04/business-working-400x266.jpeg"
@@ -319,6 +320,19 @@
 definePageMeta({
     layout: "home"
 })
+
+const title = ref('The Ultimate Guide To Joining or Hosting A Twitter Chat – VisualMag Pro')
+const description = ref('My App Description')
+
+useHead({
+  title,
+  meta: [{
+    name: 'description',
+    content: description
+  }]
+})
+
+const route = useRoute()
 </script>
 
 <style lang="scss" scoped src="./index.scss"></style>

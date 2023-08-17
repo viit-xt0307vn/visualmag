@@ -3,12 +3,7 @@
 
         <!-- Title -->
         <main class="main">
-
-            <h1 class="section-heading">Advertising</h1>
-            <p class="caption">Category description here</p>
-            <div class="content">
-                <slot />
-            </div>
+            <slot />
         </main>
 
         <!-- Sidebar -->
@@ -19,18 +14,13 @@
 </template>
 
 <script setup>
+definePageMeta({
+    layout: "default"
+})
 </script>
 
 <style lang="scss" scoped>
-.section-heading {
-    font-size: 28px;
 
-}
-
-.caption {
-    margin-top: 10px;
-    font-size: 15px;
-}
 
 .container {
     max-width: 1180px;

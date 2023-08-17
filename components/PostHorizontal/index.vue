@@ -1,10 +1,12 @@
 <template>
     <div class="post-horizontal">
-        <img class="post-horizontal-image" :src="urlImage" alt="" />
+        <nuxt-link :to="link"><img class="post-horizontal-image" :src="urlImage" alt="" /></nuxt-link>
         <div class="post-horizontal-content">
-            <h2 class="post-horizontal-title">
-                {{ title }}
-            </h2>
+            <nuxt-link :to="link">
+                <h2 class="post-horizontal-title">
+                    {{ title }}
+                </h2>
+            </nuxt-link>
             <div class="post-horizontal-metadata">
                 <h6 class="post-large-author">{{ author }}</h6>
                 <p class="post-large-date">
@@ -19,13 +21,21 @@
 </template>
 
 <script setup>
-defineProps({
+
+const {title} = defineProps({
     urlImage: "string",
     author: "string",
     date: "string",
     title: "string",
     desc: "string",
 })
+
+const link = ref("/"+title)
+
+
+const route = useRoute()
+
+
 </script>
 
 <style lang="scss" scoped>
