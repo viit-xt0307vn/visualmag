@@ -10,10 +10,12 @@
 body {
     position: relative;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 html {
     position: relative;
+    scroll-behavior: smooth;
 }
 
 a {

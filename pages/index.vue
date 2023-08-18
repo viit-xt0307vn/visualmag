@@ -332,7 +332,6 @@ useHead({
   }]
 })
 
-const route = useRoute()
 </script>
 
 <style lang="scss" scoped src="./index.scss"></style>

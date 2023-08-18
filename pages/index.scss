@@ -238,8 +238,7 @@
         flex-direction: column;
 
         &-main {
-            display: flex;
-            flex-direction: column;
+            padding: 0;
         }
         &-double {
             display: flex;

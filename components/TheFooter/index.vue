@@ -66,21 +66,24 @@
 
             </div>
         </div>
-        <div class="rollup-box" @click="handleClickRollUpp" :style="styles">
+        <div class="rollup-box" @click="handleClickRollUpp" :style="{ 'display': styles.display }">
             <font-awesome-icon icon="fa-solid fa-arrow-up" class="icon-rollup" />
         </div>
     </footer>
 </template>
 
 <script setup>
-const styles = ref({
+const styles = reactive({
     display: "none"
 })
 if (process.client) {
     window.onscroll = function () {
-        this.scrollY > 74 ? styles.value.display = "flex" : styles.value.display = "none"
-        // console.log(styles.value.display)
+        this.scrollY > 74 ? styles.display = "flex" : styles.display = "none"
     }
+}
+
+function handleClickRollUpp() {
+    window.scrollTo(0, 0)
 }
 
 
@@ -98,7 +101,7 @@ if (process.client) {
     position: fixed;
     bottom: 0;
     right: 0;
-    margin: 10px;
+    margin: 15px;
 }
 
 .icon-rollup {
