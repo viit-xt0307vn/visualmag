@@ -38,6 +38,16 @@
 </template>
 
 <script setup>
+const title = ref('Awesome – VisualMag Pro')
+const description = ref('Tag description here')
+
+useHead({
+  title,
+  meta: [{
+    name: 'description',
+    content: description
+  }]
+})
 </script>
 
 <style lang="scss" scoped>
